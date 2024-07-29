@@ -37,25 +37,23 @@ const CountryDetail = () => {
       <div className='row mt-2'>
         <div className='col-md-4 p-3' style={{ border: '1px solid black', backgroundColor: '#ffdead' }}>
           <h2>Cases</h2>
-          <p><strong>Total:</strong> {countryDetail.cases?.total}</p>
-          <p><strong>New:</strong> {countryDetail.cases?.new}</p>
-          <p><strong>Active:</strong> {countryDetail.cases?.active}</p>
-          <p><strong>Critical:</strong> {countryDetail.cases?.critical}</p>
-          <p><strong>Recovered:</strong> {countryDetail.cases?.recovered}</p>
-          <p><strong>Cases per 1M population:</strong> {countryDetail.cases?.['1M_pop']}</p>
+          <p><strong>Total:</strong> {countryDetail.cases?.total ?? 'No data'}</p>
+          <p><strong>Active:</strong> {countryDetail.cases?.active ?? 'No data'}</p>
+          <p><strong>Critical:</strong> {countryDetail.cases?.critical ?? 'No data'}</p>
+          <p><strong>Recovered:</strong> {countryDetail.cases?.recovered ?? 'No data'}</p>
+          <p><strong>Cases per 1M population:</strong> {countryDetail.cases?.['1M_pop'] ?? 'No data'}</p>
         </div>
         <div className='col-md-4 p-3' style={{ border: '1px solid black', backgroundColor: '#ea0000' }}>
           <h2>Deaths</h2>
-          <p><strong>Total:</strong> {countryDetail.deaths?.total}</p>
-          <p><strong>New:</strong> {countryDetail.deaths?.new}</p>
-          <p><strong>Deaths per 1M population:</strong> {countryDetail.deaths?.['1M_pop']}</p>
+          <p><strong>Total:</strong> {countryDetail.deaths?.total ?? 'No data'}</p>
+          <p><strong>Deaths per 1M population:</strong> {countryDetail.deaths?.['1M_pop'] ?? 'No data'}</p>
         </div>
         <div className='col-md-4 p-3' style={{ border: '1px solid black', backgroundColor: '#e0ffff' }}>
           <h2>Tests</h2>
-          <p><strong>Total:</strong> {countryDetail.tests?.total}</p>
-          <p><strong>Tests per 1M population:</strong> {countryDetail.tests?.['1M_pop']}</p>
-          <p><strong>Day:</strong> {countryDetail.day}</p>
-          <p><strong>Last Updated:</strong> {countryDetail.time}</p>
+          <p><strong>Total:</strong> {countryDetail.tests?.total ?? 'No data'}</p>
+          <p><strong>Tests per 1M population:</strong> {countryDetail.tests?.['1M_pop'] ?? 'No data'}</p>
+          <p><strong>Day:</strong> {countryDetail.day ?? 'No data'}</p>
+          <p><strong>Last Updated:</strong> {countryDetail.time ?? 'No data'}</p>
         </div>
       </div>
     </div>

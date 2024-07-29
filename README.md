@@ -1,4 +1,4 @@
-## Demo:  
+## Demo: https://covid-map-eight.vercel.app
 
 In the project directory, you can run:
 
