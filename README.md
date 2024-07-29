@@ -1,5 +1,16 @@
 ## Demo: https://covid-map-eight.vercel.app
 
+### Technologies Used
+- ReactJS
+- Redux
+- Redux Saga
+- Axios
+- Bootstrap
+- D3 Geo
+- react-simple-maps
+
+## Installation
+
 In the project directory, you can run:
 
 ### `npm install`
